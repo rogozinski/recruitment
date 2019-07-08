@@ -1,4 +1,4 @@
-# Recruitment Task 0
+# #1
 
 This is my first recruitment task and my first life project. This task supposed to be done in React.js, but due to my lack knowledge I've done it in JavaScript. I wanted to share it with you so you can be aware of my skills.
 
