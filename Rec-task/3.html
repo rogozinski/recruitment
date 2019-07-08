@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 3 - DaftCode</title>
+	</head>
+	
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.contentBox{
+			width: 400px;
+			height: auto;
+			margin: 15% auto;
+			padding: 5% 10%;
+			border: 1px solid black;
+		}
+		
+		.companiesTable{
+			width: 100%;
+			margin-top: 15px;
+		}
+		
+		tr, td{
+			border: 1px solid black;
+			padding: 5px;
+
+		}
+	</style>
+	
+	<body>
+		<div class="container">
+				<div class="contentBox">
+				<form id="searchForm">
+					<input type="text" id="filterInput" class="filter-Input" placeholder="Search...">
+					<button id="searchButton" class="button">Search</button>
+				</form>
+					<table id="companiesTable" class="companiesTable">
+						<tr class="companiesTable-item"><td>Walmart</td></tr>
+						<tr class="companiesTable-item"><td>State Grid</td></tr>
+						<tr class="companiesTable-item"><td>Sinopec Group</td></tr>
+						<tr class="companiesTable-item"><td>China National Petroleum</td></tr>
+						<tr class="companiesTable-item"><td>Royal Dutch Shell</td></tr>
+						<tr class="companiesTable-item"><td>Toyota Motor</td></tr>					
+						<tr class="companiesTable-item"><td>Volkswagen</td></tr>
+						<tr class="companiesTable-item"><td>BP</td></tr>
+						<tr class="companiesTable-item"><td>Exxon Mobil</td></tr>
+						<tr class="companiesTable-item"><td>Berkshire Hathway</td></tr>
+					</table>
+				</div>
+		</div>
+		
+		<script>
+			// Get input element
+				let searchForm = document.getElementById('searchForm');
+			// Add event listener
+					searchForm.addEventListener('submit', filterCompanies);
+
+			function filterCompanies(){
+				event.preventDefault();
+			  // Get value of input
+			  let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+			  // Get names ul
+			  let companiesTable = document.getElementById('companiesTable');
+			  // Get lis from ul
+			  let tr = companiesTable.querySelectorAll('tr.companiesTable-item');
+
+			  // Loop through collection-item lis
+			  for(let i = 0;i < tr.length;i++){
+				let td = tr[i].getElementsByTagName('td')[0];
+				// If matched
+				if(td.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+				  tr[i].style.display = '';
+				} else {
+				  tr[i].style.display = 'none';
+				}
+			  }			
+			}
+		</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 2 - DaftCode</title>
+		
+	<style>
+		*{
+			margin: 0px auto;
+			padding: 0px;
+		}
+
+
+		body{
+			background-color: #FFF;
+		}
+
+		.content{
+			margin-top: 15%;
+			width: 10%;
+			height: 10%;
+		}
+
+		.content{
+			display: flex;
+			align-self: center;
+			border: 6px red dashed;
+			padding: 5%;
+		}
+
+		.button{
+			height: 50px;
+			width: 100px;	
+		}
+
+	/*---MODAL----*/
+
+		.modal, .bg-modal{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.bg-modal{
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.7);
+			position: absolute;
+			top: 0;
+			display: none;
+		}
+
+
+
+		.modal{
+			width: 500px;
+			height: 300px;
+			background-color: #FFF;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
+		a{
+			text-decoration: underline;
+			font-size: 50px;
+			font-family: arial;
+			color: black;
+		}
+		
+	</style>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">					
+					<button id="button" class="button">Click here!</button>
+			</div>		
+		</div>
+			
+	<!----Modal---->
+		<div class="bg-modal">
+			<div class="modal">
+				<a href="3.html">Go to Task 3!</a>
+				<button id="close" class="button">X</button>
+			</div>
+		</div>
+	
+		<script>
+			document.getElementById('button').addEventListener('click', function(){
+				document.querySelector('.bg-modal').style.display='flex';
+			});
+					
+			document.getElementById('close').addEventListener('click', function(){
+				document.querySelector('.bg-modal').style.display='none';
+			});
+		
+		</script>
+	
+	</body>
+</html>

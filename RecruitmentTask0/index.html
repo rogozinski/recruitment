@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head lang="eng">
+		<title>Recruitment Frontend Task - Michal Rogozinski</title>
+		<meta name="author" description="Michal Rogozinski">
+		<meta charset="utf-8">
+		
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+			<!------------------------------------------------------------------>
+		
+		<div id="container">
+		
+		<div id="headPanel" class="headPanel">
+			<div id="submitPanelLeft" class="submitPanel-left">
+			
+				<button id="addUserButton" class="button-submit" onclick="showForm()"><img id="plus" src="ico/p_white.png">&nbsp Add User</button>
+			
+			</div>
+			<!------------------------------------------------------------------>
+			<div id="infoPanelRight" class="infoPanel-right">
+			
+			</div>
+		</div>
+			<!------------------------------------------------------------------>
+			<div id="content" style="clear: both;">
+				<table id="usrTable" class="usrTableStyle">
+					<tr>
+						<th>ID</th>
+						<th id="th-head" onclick="sortTable(1)">User &#8693</th>
+						<th id="th-head" onclick="sortTable(2)">Email &#8693</th>
+						<th>Remove</th>
+					</tr>
+				</table>
+			</div>
+		
+		</div>
+	</body>
+</html>

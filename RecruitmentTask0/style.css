@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(249,251,250);
+}
+
+
+#top{
+	width: 960px;
+	margin: 2% auto 4% auto;
+}
+
+.a_unamo{
+	float:right;
+	color: #04ab6b;
+	text-decoration: none;
+}
+
+#container{
+	background-color: #fff;
+	width: 960px;
+	height:auto;
+	margin: 2% auto;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+
+.headPanel{
+	margin: 0 20px 0 25px;
+	padding: 25px 0;
+}
+
+.submitPanel-left{
+	float: left;
+	height:40px;
+	width:auto;
+	
+}
+
+.infoPanel-right{
+	padding-top: 12px;
+	padding-left: 10px;
+	float: left;
+	text-align: right;
+	width:auto;
+	height:40px;
+	font-size: 12px;
+	font-weight:700;
+}
+
+.input-usr{
+	height: 40px; 
+	float: left;
+	width: 200px;
+	margin: 0 5px;
+	border-radius: 3px;
+	background: #fff;
+	border: 1px solid rgb(194,209,207);
+	padding-left:10px;
+}
+
+.input-usr:focus,
+.input-em:focus{
+	border: 1px solid rgb(90,120,117);
+}
+.input-em{
+	height: 40px; 
+	float: left;
+	height: 40px;
+	width: 200px;
+	margin: 0 5px;
+	border-radius: 3px;
+	background: #fff;
+	border: 1px solid rgb(194,209,207);
+	padding-left:10px;
+}
+
+
+.button-submit{
+	height: 40px; 
+	float: left;
+	width: 150px;
+	height:40px;
+	margin: 0 5px;
+	border-radius:3px;
+	color: #fff;
+	font-weight:700;
+	background-color: #0AAB6B;
+	border: none;
+	cursor: pointer;
+}
+
+.button-submit:disabled{
+	border: 2px solid #0AAB6B;
+	background-color: #fff;
+	color: #0AAB6B;
+	cursor: default;
+}
+
+
+.clearSubmit{
+	padding-top: 14px;
+	cursor: pointer;
+	text-decoration: underline;
+	color: red;
+	font-size: 10px;
+	float:left;
+}
+
+.usrTableStyle{
+	border-collapse: collapse;
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+th{
+	background-color:rgb(244,245,247);
+	height:30px;
+}
+
+#th-head{
+	cursor: pointer;
+}
+
+.first-column{
+	height: 50px;
+	padding: 0 25px;
+	width: 80px;
+}
+
+.spanBlock{
+	border: 1px solid rgb(244,245,247);
+	border-radius:25px;
+	background-color: #fff;
+	
+}
+
+.second-column{
+	padding: 0 25px;
+	width: 400px;
+}
+
+.third-column{
+	padding: 0 25px;
+	width: 400px;
+}
+
+.forth-column{
+	width: 80px;
+	padding: 0 25px;
+}
+
+
+
+.X{
+	border-radius:10px;
+	background-color:#fff;
+	border: none;
+	cursor: pointer;
+}
+
+.X:focus {
+  outline: none;
+}
